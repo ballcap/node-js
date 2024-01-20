@@ -7,9 +7,7 @@ const app = express();
 // Define a route to handle requests to the root URL
 app.get('/', (req, res) => {
   // Send the "Hello world!" HTML as the response
-  res.send(`
-  <p>Hello world!</p>
-  `);
+  res.send('<p>Hello world!</p>');
 });
 
 // Start the server on port 8080
