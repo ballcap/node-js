@@ -13,8 +13,10 @@ nav,
 section,
 footer { 
   display: flex;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 section {
@@ -25,3 +27,9 @@ header > div,
 nav > div,
 section > div,
 footer > div { flex: 1; }
+
+header,
+footer {
+  background: #272727;
+  color: #d0d0d0;
+}
