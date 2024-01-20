@@ -20,3 +20,8 @@ footer {
 section {
   flex-direction: column;
 }
+
+header > div,
+nav > div,
+section > div,
+footer > div { flex: 1; }
