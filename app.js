@@ -9,6 +9,8 @@ const port = 8000;
 app.use(express.json());
 // Middleware to parse incoming form data
 app.use(express.urlencoded({ extended: true }));
+// Middleware to serve static files (CSS, images, etc.)
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set up a route to serve the index.html file
 app.get('/', (req, res) => {
