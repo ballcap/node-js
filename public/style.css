@@ -5,9 +5,11 @@ body {
   padding: 0;
 }
 
-nav { display: flex; }
+nav,
+section { display: flex; }
 
-.nav-item {
+.nav-item,
+.section-item {
   flex: 1;
   padding: 10px;
   border: solid 1px #919191;
