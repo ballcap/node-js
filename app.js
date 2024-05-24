@@ -22,6 +22,10 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
+app.get('/portfolio', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
