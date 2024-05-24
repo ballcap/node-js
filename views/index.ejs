@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Flex | Index</title>
+</head>
+<body>
+    <% include header %>
+
+    <nav>
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1716436329478-e4261139e1ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D" alt=""/>
+        </div>
+        <div class="login-form">
+            <form method="post" action="/login">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username" required/>
+                <input type="password" placeholder="Password" required/>
+                <input type="submit" value="Log In"/>
+            </form>
+        </div>
+    </section>
+
+    <% include footer %>
+</body>
+</html>
