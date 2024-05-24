@@ -5,25 +5,28 @@ const app = express();
 // Define the port
 const PORT = 8000;
 
+// Set the view engine to EJS
+app.set('view engine', 'ejs');
+
 // Middleware to serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route to serve index.html
+// Route to render index.ejs
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.render('index');
 });
 
-// Routes
+// Routes for other pages
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'about.html'));
+    res.render('about');
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+    res.render('contact');
 });
 
 app.get('/portfolio', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
+    res.render('portfolio');
 });
 
 // Start the server
