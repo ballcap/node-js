@@ -8,8 +8,8 @@ const PORT = 8000;
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
 
-// Middleware to serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Middleware to serve static files from the "views" directory
+app.use(express.static(path.join(__dirname, 'views')));
 
 // Route to render index.ejs
 app.get('/', (req, res) => {
