@@ -70,16 +70,11 @@ nav {
     justify-content: center;
 }
 
-nav div {
-    border-top: solid 1px #eee;
-}
-
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0 1em;
     transition: color 0.3s;
-    display: block;
 }
 
 nav a:hover {
@@ -163,6 +158,8 @@ footer {
 .footer-1 div {
     flex: 1;
     padding: 0 1em;
+    display: block;
+    border-top: solid 1px #ebebeb;
 }
 
 .footer-2 {
