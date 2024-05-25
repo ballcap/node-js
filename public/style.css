@@ -158,8 +158,11 @@ footer {
 .footer-1 div {
     flex: 1;
     padding: 0 1em;
-    display: block;
     border-top: solid 1px #ebebeb;
+}
+
+.footer-1 div a {
+    display: block;
 }
 
 .footer-2 {
