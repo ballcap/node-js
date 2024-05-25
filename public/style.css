@@ -70,6 +70,11 @@ nav {
     justify-content: center;
 }
 
+nav div {
+    display: block;
+    border-top: solid 1px #eee;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
