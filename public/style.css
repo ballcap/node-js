@@ -71,7 +71,6 @@ nav {
 }
 
 nav div {
-    display: block;
     border-top: solid 1px #eee;
 }
 
@@ -80,6 +79,7 @@ nav a {
     text-decoration: none;
     padding: 0 1em;
     transition: color 0.3s;
+    display: block;
 }
 
 nav a:hover {
