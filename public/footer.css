@@ -16,11 +16,13 @@ footer {
     color: #9a9a9a;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer-1 > div {
     flex: 1;
     padding: 0 5px;
+    min-width: 200px;
 }
 
 .footer-1 div div { margin-bottom: 1em; }
@@ -76,3 +78,45 @@ i {
 }
 
 i:hover { color: #c4c4c4; }
+
+/* Media Queries for Smartphones */
+@media (max-width: 600px) {
+    footer {
+        padding: 2em 1em 1em 1em;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-1 > div {
+        flex: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
+
+    footer input[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 20px 0;
+    }
+
+    footer input[type="email"] {
+        width: calc(100% - 32px); /* Adjust for padding */
+    }
+
+    .footer-2 { margin-top: 5em; }
+
+    .address {
+        text-align: center;
+    }
+}
