@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Teachers", sans-serif;
+}
+
+footer {
+    padding: 3em 3em 1em 3em;
+    background: #212121;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-1 {
+    color: #9a9a9a;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-1 > div {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.footer-1 div div { margin-bottom: 1em; }
+
+footer a {
+    text-decoration: none;
+    color: #a9a9a9;
+    font-size: 17px;
+}
+
+footer a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
+footer h1 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+footer input[type="submit"] {
+    background: inherit;
+    border: solid 2px #c4c4c4;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #c4c4c4;
+    font-weight: 600;
+    margin: 30px;
+}
+
+footer input[type="submit"]:hover {
+    background: #c4c4c4;
+    color: #222;
+    cursor: pointer;
+}
+
+footer input[type="email"] {
+    width: 100%;
+    padding: 8px 0 8px 16px;
+    border-radius: 6px;
+    border: solid 1px transparent;
+    box-sizing: border-box;
+}
+
+.footer-2 { margin-top: 10em; }
+
+.address {
+    text-align: left;
+}
+
+i {
+    color: #efefef;
+}
+
+i:hover { color: #c4c4c4; }
