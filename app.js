@@ -26,8 +26,16 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
-app.get('/portfolio', (req, res) => {
-    res.render('portfolio');
+app.get('/services', (req, res) => {
+    res.render('services');
+});
+
+app.get('/blog', (req, res) => {
+    res.render('blog');
+});
+
+app.get('/shop', (req, res) => {
+    res.render('shop');
 });
 
 // Start the server
