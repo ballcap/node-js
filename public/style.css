@@ -177,7 +177,7 @@ h1 { font-weight: 600; }
 
     section {
         padding: 2em 2em;
-        flex-direction: column;
+        display: block;
     }
 
     .image-container, .login-form {
@@ -201,5 +201,6 @@ h1 { font-weight: 600; }
 
     section {
         padding: 1em;
+        display: block;
     }
 }
